@@ -1,13 +1,24 @@
-function Home(){
-    return(
-
-        <div className="home">
-            <p>We provide yout the best money managingplatform ever existed</p>
-            <p>Our platform is the best in the market</p>
-            <p>Feel free to contact our employees </p>
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 
-        </div>
-    )
+function Home() {
+  return (
+    <div className="home">
+      <h1>Welcome to the Homepage</h1>
+      <p>
+        This is the homepage of our website. Here you can find information about our services and navigate to different sections. Please log in or register to access more features.
+      </p>
+      <div className="button-group">
+        <Link to="/login">
+          <button className="button login-button">Login</button>
+        </Link>
+        <Link to="/register">
+          <button className="button register-button">Register</button>
+        </Link>
+      </div>
+    </div>
+  );
 }
+
 export default Home;

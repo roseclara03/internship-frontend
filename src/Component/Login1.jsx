@@ -33,7 +33,7 @@ function Login2() {
       });
       if (response.status === 200) {
         setResult(`Your name is ${username}, your email is ${email}, and you have entered a password.`);
-        navigate('/home');
+        navigate('/about');
       }
     } catch (error) {
       setError('User not found');
